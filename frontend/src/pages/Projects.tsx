@@ -4,36 +4,29 @@ import './Pages.css';
 const Projects: React.FC = () => {
   const projects = [
     {
-      title: 'NajmAI',
-      type: 'SaaS Framer Template',
-      image: '/Sawad_files/4mYEXU91rLBNKIW9k6hZh16l7Q.jpeg'
+      title: 'ToDo Microservice Application',
+      type: 'Backend Services',
+      description: 'Microservices-based backend using Java and Spring Boot. Implemented REST APIs structured with clean architecture principles. Applied concurrency and modular design for high scalability.'
     },
     {
-      title: 'Damas',
-      type: 'Free Framer Template',
-      image: '/Sawad_files/5Ra4AFZmEJOkMGLAEjkRXt2oqF4.png'
-    },
-    {
-      title: 'Faseelh',
-      type: 'Free Framer Template',
-      image: '/Sawad_files/GyxvLZ0U5MeFKnTaiObmffY.png'
+      title: 'MyBank Full-Stack Application',
+      type: 'Full Stack Service',
+      description: 'Developed over 30 REST APIs dedicated to core banking workflows utilizing Spring Boot & MySQL. Secured and optimized DB queries reducing API latencies natively.'
     }
   ];
 
   return (
     <div className="page-container">
       <header className="section-header">
-        <h1>Recent <span className="accent-text">Projects</span></h1>
+        <h1>Selected <span className="accent-text">Projects</span></h1>
       </header>
-      <div className="projects-grid">
+      <div className="list-container">
         {projects.map((project, index) => (
-          <div key={index} className="project-card">
-            <div className="project-image">
-              <img src={project.image} alt={project.title} />
-            </div>
-            <div className="project-info">
+          <div key={index} className="list-item">
+            <div className="list-item-content">
               <h3>{project.title}</h3>
-              <p>{project.type}</p>
+              <h4>{project.type}</h4>
+              <p>{project.description}</p>
             </div>
           </div>
         ))}

@@ -4,29 +4,33 @@ import './Pages.css';
 const Tools: React.FC = () => {
   const categories = [
     {
-      name: 'Design',
-      tools: ['Figma', 'Adobe XD', 'Sketch', 'Framer']
+      name: 'Core Languages',
+      tools: ['Java 11/17', 'SQL']
     },
     {
-      name: 'Frontend',
-      tools: ['React', 'TypeScript', 'Next.js', 'Redux', 'Tailwind CSS', 'SASS']
+      name: 'Backend Frameworks',
+      tools: ['Spring Boot', 'Hibernate', 'JUnit', 'Mockito']
     },
     {
-      name: 'Backend',
-      tools: ['Node.js', 'Express', 'PostgreSQL', 'MongoDB', 'GraphQL', 'Prisma']
+      name: 'Frontend Frameworks',
+      tools: ['React', 'HTML/CSS', 'JavaScript']
     },
     {
-      name: 'Others',
-      tools: ['Docker', 'AWS', 'Git', 'CI/CD', 'Jest']
+      name: 'Databases & Message Brokers',
+      tools: ['PostgreSQL', 'MySQL', 'Redis', 'Apache Kafka']
+    },
+    {
+      name: 'DevOps & Tools',
+      tools: ['Docker', 'Kubernetes', 'AWS', 'Git', 'Jenkins']
     }
   ];
 
   return (
     <div className="page-container">
       <header className="section-header">
-        <h1>Premium <span className="accent-text">Tools</span></h1>
+        <h1>Technology <span className="accent-text">Stack</span></h1>
       </header>
-      
+
       {categories.map((cat, index) => (
         <div key={index} className="tools-section">
           <h2>{cat.name}</h2>

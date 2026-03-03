@@ -4,16 +4,10 @@ import './Pages.css';
 const Education: React.FC = () => {
   const educationList = [
     {
-      school: 'University of Technology',
-      degree: 'B.S. in Computer Science',
-      year: '2016 - 2020',
-      description: 'Focused on Software Engineering and Artificial Intelligence.'
-    },
-    {
-      school: 'Online Certifications',
-      degree: 'Full Stack Web Development',
-      year: '2020',
-      description: 'Advanced certification in modern web technologies.'
+      school: 'Jamia Hamdard University — New Delhi, India',
+      degree: 'B.Tech (Electronics and Communication Engineering)',
+      year: '2017 - 2021',
+      description: 'CGPA: 8.0'
     }
   ];
 
