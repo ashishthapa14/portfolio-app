@@ -44,3 +44,14 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+---
+
+## Using the Sawad template
+
+The `Sawad.html` file that you included can be served directly by the React application. To make this work:
+
+1. **Move or copy `Sawad.html` into the `public/` directory.** The development server (and the production build) will serve it at `/Sawad.html`.
+2. The root route of the React router (`/`) has been updated to render a new `SawadPage` component that fetches that file and injects it with `dangerouslySetInnerHTML`. This gives you a React app that displays exactly the layout, styles and scripts from the original `Sawad.html` without manually converting every element.
+
+You can still use the other React pages by clicking the links in the header once the page has loaded.
